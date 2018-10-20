@@ -323,17 +323,17 @@ CFLAGS += -DANZ_MESS=25
 # but successfull measurements are allowed double of the specified number.
 #  You can specify up to 255 empty measurements (CFLAGS += -DPOWER_OFF=255).
 #CFLAGS += -DPOWER_OFF=5
-CFLAGS += -DPOWER_OFF
+#CFLAGS += -DPOWER_OFF
 
 # Option BAT_CHECK enables the Battery Voltage Check, otherwise the SW Version is displayed instead of Bat.
 # BAT_CHECK should be set for battery powered tester version.
-CFLAGS += -DBAT_CHECK
+#CFLAGS += -DBAT_CHECK
 
 # The BAT_OUT option enables Battery Voltage Output on LCD (if BAT_CHECK is selected).
 # If your 9V supply has a diode installed, use the BAT_OUT=600 form to specify the
 # threshold voltage of your diode to adjust the output value.
 # This threshold level is added to LCD-output and does not affect the voltage checking levels.
-CFLAGS += -DBAT_OUT=150
+#CFLAGS += -DBAT_OUT=150
 
 # To adjust the warning-level and poor-level of battery check to the capability of a
 # low drop voltage regulator, you can specify the Option BAT_POOR=5400 .
@@ -344,7 +344,7 @@ CFLAGS += -DBAT_OUT=150
 # The warning level is 0.1V higher than the specified poor level (<=1.3V).
 # Setting the poor level to low values is not recommended for rechargeable Batteries,
 # because this increase the danger for deep discharge!!
-CFLAGS += -DBAT_POOR=6400
+#CFLAGS += -DBAT_POOR=6400
 
 # You can set a upper battery voltage limit in mV units for battery operation mode.
 # The operation time of additional functions is limited with the battery operation mode. 
@@ -352,7 +352,7 @@ CFLAGS += -DBAT_POOR=6400
 # "DC_Pwr_Mode", where time limits of the additional functions are switched off.
 # The "DC_Pwr_Mode" is also started, if the battery voltage is detected below 0.9V
 # regardless to the state of the DC_PWR option.
-CFLAGS += -DDC_PWR=10500
+#CFLAGS += -DDC_PWR=10500
 
 # Voltage divider for battery voltage measurement  10k / 3.3k = 133/33
 #CFLAGS += -DBAT_NUMERATOR=133
